@@ -1,0 +1,58 @@
+#:C19    
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.20131013
+#Current Working Directory:
+#:D   C:\Users\cljchanac\Desktop\lab4a\lab4a
+#Date/Time:
+#:T   Mon Nov 25 19:32:00 2019
+#------------------------------
+	#Reading matmult_top.ncd...
+	#Loading device for application Rf_Device from file '5vlx110t.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+	#   "matmult_top" is an NCD, version 3.2, device xc5vlx110t, package ff1136, speed -1
+	#Design creation date: 2019.11.25.11.19.23
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes
+	#2
+select -k comp 'A_ram[1].A_column/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v5_init.ram/SP.WIDE_PRIM18.SP'
+	#3
+unselect comp 'A_ram[1].A_column/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v5_init.ram/SP.WIDE_PRIM18.SP'
+	#4
+select -k comp 'A_ram[0].A_column/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v5_init.ram/SP.WIDE_PRIM18.SP'
+	#5
+unselect comp 'A_ram[0].A_column/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v5_init.ram/SP.WIDE_PRIM18.SP'
+	#6
+select -k comp 'A_ram[4].A_column/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v5_init.ram/SP.WIDE_PRIM18.SP'
+	#7
+unselect comp 'A_ram[4].A_column/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v5_init.ram/SP.WIDE_PRIM18.SP'
+	#8
+select -k comp 'A_ram[9].A_column/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v5_init.ram/SP.WIDE_PRIM18.SP'
+	#9
+unselect comp 'A_ram[9].A_column/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v5_init.ram/SP.WIDE_PRIM18.SP'
+	#10
+select -k comp 'A_ram[11].A_column/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v5_init.ram/SP.WIDE_PRIM18.SP'
+	#11
+unselect comp 'A_ram[11].A_column/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v5_init.ram/SP.WIDE_PRIM18.SP'
+	#12
+select -k comp 'A_ram[0].A_column/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v5_init.ram/SP.WIDE_PRIM18.SP'
+	#13
+setattr main disable_draw on
+	#14
+setattr layer local_lines view off
+	#15
+setattr main disable_draw off
+	#Hint: change the visibility of more than one layer at a time by clicking on the apply button, clicking two or more layer buttons, and then clicking on the apply button again.
+	#16
+setattr main disable_draw on
+	#17
+setattr layer long_lines view off
+	#18
+setattr main disable_draw off
+	#19
+setattr main disable_draw on
+	#20
+setattr layer pinwires view off
+	#21
+setattr main disable_draw off

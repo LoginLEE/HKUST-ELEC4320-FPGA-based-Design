@@ -1,0 +1,14 @@
+MO im_rgb_ram NULL ipcore_dir/im_rgb_ram.v vlg5B/im__rgb__ram.bin 1576742661
+MO draw_logic NULL draw_logic.v vlg6B/draw__logic.bin 1576664316
+MO vgamult NULL vgamult.v vlg00/vgamult.bin 1576742661
+MO im_m_ram NULL ipcore_dir/im_m_ram.v vlg69/im__m__ram.bin 1576742661
+MO im_gray_ram NULL ipcore_dir/im_gray_ram.v vlg13/im__gray__ram.bin 1576742661
+MO mult32 NULL ipcore_dir/mult32.v vlg77/mult32.bin 1576664316
+MO img_ram NULL ipcore_dir/img_ram.v vlg10/img__ram.bin 1576740815
+MO up_counter NULL up_counter.v vlg5C/up__counter.bin 1576664316
+MO simple_rom NULL simple_rom.v vlg4F/simple__rom.bin 1576664316
+MO tick_logic NULL tick_logic.v vlg40/tick__logic.bin 1576664316
+MO vga_clk NULL vga_clk.v vlg5F/vga__clk.bin 1576742661
+MO vga_logic NULL vga_logic.v vlg43/vga__logic.bin 1576742661
+MO dvi_ifc NULL dvi_ifc.v vlg50/dvi__ifc.bin 1576742661
+MO main_logic NULL main_logic.v vlg1E/main__logic.bin 1576742661

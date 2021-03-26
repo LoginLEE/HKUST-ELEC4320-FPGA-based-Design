@@ -1,0 +1,385 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Mapping Report File for Design 'vgamult'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc5vlx110t-ff1136-2 -w -logic_opt off -ol
+high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr
+off -lc off -power off -o vgamult_map.ncd vgamult.ngd vgamult.pcf 
+Target Device  : xc5vlx110t
+Target Package : ff1136
+Target Speed   : -2
+Mapper Version : virtex5 -- $Revision: 1.55 $
+Mapped Date    : Thu Dec 19 16:04:51 2019
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    0
+Slice Logic Utilization:
+  Number of Slice Registers:                   143 out of  69,120    1%
+    Number used as Flip Flops:                 143
+  Number of Slice LUTs:                        283 out of  69,120    1%
+    Number used as logic:                      280 out of  69,120    1%
+      Number using O6 output only:             222
+      Number using O5 output only:              43
+      Number using O5 and O6:                   15
+    Number used as exclusive route-thru:         3
+  Number of route-thrus:                        49
+    Number using O6 output only:                46
+    Number using O5 output only:                 3
+
+Slice Logic Distribution:
+  Number of occupied Slices:                   100 out of  17,280    1%
+  Number of LUT Flip Flop pairs used:          290
+    Number with an unused Flip Flop:           147 out of     290   50%
+    Number with an unused LUT:                   7 out of     290    2%
+    Number of fully used LUT-FF pairs:         136 out of     290   46%
+    Number of unique control sets:               9
+    Number of slice register sites lost
+      to control set restrictions:               9 out of  69,120    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+  OVERMAPPING of BRAM resources should be ignored if the design is
+  over-mapped for a non-BRAM resource or if placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        50 out of     640    7%
+    Number of LOCed IOBs:                       26 out of      50   52%
+
+Specific Feature Utilization:
+  Number of BlockRAM/FIFO:                      27 out of     148   18%
+    Number using BlockRAM only:                 27
+    Total primitives used:
+      Number of 36k BlockRAM used:              21
+      Number of 18k BlockRAM used:              10
+    Total Memory used (KB):                    936 out of   5,328   17%
+  Number of BUFG/BUFGCTRLs:                      2 out of      32    6%
+    Number used as BUFGs:                        2
+  Number of DCM_ADVs:                            1 out of      12    8%
+  Number of DSP48Es:                             3 out of      64    4%
+
+Average Fanout of Non-Clock Nets:                4.20
+
+Peak Memory Usage:  626 MB
+Total REAL time to MAP completion:  12 secs 
+Total CPU time to MAP completion:   12 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:Security:43 - No license file was found in the standard Xilinx license
+directory.
+WARNING:Security:44 - Since no license file was found,
+WARNING:Security:42 - Your software subscription period has lapsed. Your current
+version of Xilinx tools will continue to function, but you no longer qualify for
+Xilinx software updates or new releases.
+
+Section 3 - Informational
+-------------------------
+INFO:Security:50 - The XILINXD_LICENSE_FILE environment variable is set to
+'2100@eels.ece.ust.hk'.
+INFO:Security:52 - The LM_LICENSE_FILE environment variable is set to
+'27031@eels.ece.ust.hk'.
+INFO:Security:56 - Part 'xc5vlx110t' is not a WebPack part.
+INFO:LIT:243 - Logical network left_IBUF has no load.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 0.950 Volts. (default - Range: 0.950 to
+   1.050 Volts)
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+INFO:Place:834 - Only a subset of IOs are locked. Out of 50 IOs, 26 are locked
+   and 24 are not locked. If you would like to print the names of these IOs,
+   please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
+INFO:Pack:1650 - Map created a placed design.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+  15 block(s) removed
+  10 block(s) optimized away
+  22 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+The signal
+"main1/im_g_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+r/has_mux_a.A/sel_pipe<0>" is sourceless and has been removed.
+The signal
+"main1/im_g_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+r/has_mux_a.A/sel_pipe<1>" is sourceless and has been removed.
+The signal
+"main1/im_g_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+r/has_mux_a.A/sel_pipe<2>" is sourceless and has been removed.
+The signal
+"main1/im_g_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+r/ramloop[1].ram.ram_douta" is sourceless and has been removed.
+The signal
+"main1/im_g_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+r/ramloop[2].ram.ram_douta<0>" is sourceless and has been removed.
+The signal
+"main1/im_g_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+r/ramloop[4].ram.ram_douta" is sourceless and has been removed.
+The signal
+"main1/im_g_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+r/ramloop[2].ram.ram_douta<1>" is sourceless and has been removed.
+The signal
+"main1/im_g_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+r/ramloop[6].ram.ram_douta" is sourceless and has been removed.
+The signal
+"main1/im_g_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+r/ramloop[2].ram.ram_douta<2>" is sourceless and has been removed.
+The signal
+"main1/im_g_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+r/ramloop[8].ram.ram_douta" is sourceless and has been removed.
+The signal
+"main1/im_g_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+r/ramloop[2].ram.ram_douta<3>" is sourceless and has been removed.
+The signal
+"main1/im_g_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+r/ramloop[10].ram.ram_douta" is sourceless and has been removed.
+The signal
+"main1/im_g_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+r/ramloop[2].ram.ram_douta<4>" is sourceless and has been removed.
+The signal
+"main1/im_g_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+r/ramloop[12].ram.ram_douta" is sourceless and has been removed.
+The signal
+"main1/im_g_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+r/ramloop[2].ram.ram_douta<5>" is sourceless and has been removed.
+The signal
+"main1/im_g_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+r/ramloop[14].ram.ram_douta" is sourceless and has been removed.
+The signal
+"main1/im_g_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+r/ramloop[2].ram.ram_douta<6>" is sourceless and has been removed.
+The signal
+"main1/im_g_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+r/ramloop[16].ram.ram_douta" is sourceless and has been removed.
+The signal
+"main1/im_g_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+r/ramloop[2].ram.ram_douta<7>" is sourceless and has been removed.
+The signal
+"main1/im_g_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+r/ramloop[1].ram.ram_ena" is sourceless and has been removed.
+The signal "main1/im_g_ram/N2" is sourceless and has been removed.
+ Sourceless block
+"main1/im_g_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+r/bindec_a.bindec_inst_a/Mmux_ENOUT<48>1" (ROM) removed.
+  The signal
+"main1/im_g_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+r/ena_array<48>" is sourceless and has been removed.
+Unused block
+"main1/im_g_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+r/ramloop[2].ram.r/v5_init.ram/SP.SINGLE_PRIM18.SP" (RAMB18) removed.
+Unused block
+"main1/im_g_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+r/ramloop[10].ram.r/v5_init.ram/SP.SINGLE_PRIM36.SP" (RAMB36_EXP) removed.
+Unused block
+"main1/im_g_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+r/ramloop[12].ram.r/v5_init.ram/SP.SINGLE_PRIM36.SP" (RAMB36_EXP) removed.
+Unused block
+"main1/im_g_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+r/ramloop[14].ram.r/v5_init.ram/SP.SINGLE_PRIM36.SP" (RAMB36_EXP) removed.
+Unused block
+"main1/im_g_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+r/ramloop[16].ram.r/v5_init.ram/SP.SINGLE_PRIM36.SP" (RAMB36_EXP) removed.
+Unused block
+"main1/im_g_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+r/ramloop[1].ram.r/v5_init.ram/SP.SINGLE_PRIM36.SP" (RAMB36_EXP) removed.
+Unused block
+"main1/im_g_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+r/ramloop[4].ram.r/v5_init.ram/SP.SINGLE_PRIM36.SP" (RAMB36_EXP) removed.
+Unused block
+"main1/im_g_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+r/ramloop[6].ram.r/v5_init.ram/SP.SINGLE_PRIM36.SP" (RAMB36_EXP) removed.
+Unused block
+"main1/im_g_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+r/ramloop[8].ram.r/v5_init.ram/SP.SINGLE_PRIM36.SP" (RAMB36_EXP) removed.
+Unused block
+"main1/im_g_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+r/bindec_a.bindec_inst_a/Mmux_ENOUT<48>1_SW0" (ROM) removed.
+Unused block
+"main1/im_g_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+r/has_mux_a.A/sel_pipe_0" (FF) removed.
+Unused block
+"main1/im_g_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+r/has_mux_a.A/sel_pipe_1" (FF) removed.
+Unused block
+"main1/im_g_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+r/has_mux_a.A/sel_pipe_2" (FF) removed.
+Unused block
+"main1/im_g_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+r/out11" (ROM) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+LUT6
+		main1/im_g_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cs
+tr/has_mux_a.A/Mmux_dout_mux1011
+   optimized to 0
+FDE
+		main1/im_g_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cs
+tr/has_mux_a.A/sel_pipe_3
+   optimized to 0
+FDE
+		main1/im_g_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cs
+tr/has_mux_a.A/sel_pipe_4
+   optimized to 0
+FDE
+		main1/im_g_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cs
+tr/has_mux_a.A/sel_pipe_5
+   optimized to 0
+LUT2
+		main1/im_g_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cs
+tr/out1
+   optimized to 1
+GND 		main1/im_g_ram/XST_GND
+GND 		main1/im_med_ram/XST_GND
+GND 		main1/im_rgb_ram/XST_GND
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| D<0>                               | IOB              | OUTPUT    | LVDCI_33             |       |          |      |              |          |          |
+| D<1>                               | IOB              | OUTPUT    | LVDCI_33             |       |          |      |              |          |          |
+| D<2>                               | IOB              | OUTPUT    | LVDCI_33             |       |          |      |              |          |          |
+| D<3>                               | IOB              | OUTPUT    | LVDCI_33             |       |          |      |              |          |          |
+| D<4>                               | IOB              | OUTPUT    | LVDCI_33             |       |          |      |              |          |          |
+| D<5>                               | IOB              | OUTPUT    | LVDCI_33             |       |          |      |              |          |          |
+| D<6>                               | IOB              | OUTPUT    | LVDCI_33             |       |          |      |              |          |          |
+| D<7>                               | IOB              | OUTPUT    | LVDCI_33             |       |          |      |              |          |          |
+| D<8>                               | IOB              | OUTPUT    | LVDCI_33             |       |          |      |              |          |          |
+| D<9>                               | IOB              | OUTPUT    | LVDCI_33             |       |          |      |              |          |          |
+| D<10>                              | IOB              | OUTPUT    | LVDCI_33             |       |          |      |              |          |          |
+| D<11>                              | IOB              | OUTPUT    | LVDCI_33             |       |          |      |              |          |          |
+| blank                              | IOB              | OUTPUT    | LVDCI_33             |       |          |      |              |          |          |
+| clk                                | IOB              | OUTPUT    | LVCMOS33             |       | 24       | FAST |              |          |          |
+| clk_100mhz                         | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| clk_n                              | IOB              | OUTPUT    | LVCMOS33             |       | 24       | FAST |              |          |          |
+| down                               | IOB              | INPUT     | LVTTL                |       |          |      |              |          |          |
+| dvi_rst                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| hsync                              | IOB              | OUTPUT    | LVDCI_33             |       |          |      |              |          |          |
+| left                               | IOB              | INPUT     | LVTTL                |       |          |      |              |          |          |
+| pixel_b<0>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| pixel_b<1>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| pixel_b<2>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| pixel_b<3>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| pixel_b<4>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| pixel_b<5>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| pixel_b<6>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| pixel_b<7>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| pixel_g<0>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| pixel_g<1>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| pixel_g<2>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| pixel_g<3>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| pixel_g<4>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| pixel_g<5>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| pixel_g<6>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| pixel_g<7>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| pixel_r<0>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| pixel_r<1>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| pixel_r<2>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| pixel_r<3>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| pixel_r<4>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| pixel_r<5>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| pixel_r<6>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| pixel_r<7>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| right                              | IOB              | INPUT     | LVTTL                |       |          |      |              |          |          |
+| rst                                | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| scl_tri                            | IOB              | OUTPUT    | LVCMOS18             |       | 6        | SLOW |              |          |          |
+| sda_tri                            | IOB              | OUTPUT    | LVCMOS18             |       | 6        | SLOW |              |          |          |
+| up                                 | IOB              | INPUT     | LVTTL                |       |          |      |              |          |          |
+| vsync                              | IOB              | OUTPUT    | LVDCI_33             |       |          |      |              |          |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+Use the "-detail" map option to print out Control Set Information.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

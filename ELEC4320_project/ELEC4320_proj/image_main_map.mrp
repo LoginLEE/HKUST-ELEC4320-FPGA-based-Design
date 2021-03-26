@@ -1,0 +1,247 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Mapping Report File for Design 'image_main'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol
+high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr
+off -lc off -power off -o image_main_map.ncd image_main.ngd image_main.pcf 
+Target Device  : xc5vlx110t
+Target Package : ff1136
+Target Speed   : -1
+Mapper Version : virtex5 -- $Revision: 1.55 $
+Mapped Date    : Tue Dec 17 16:47:43 2019
+
+Design Summary
+--------------
+Number of errors   :   1
+Number of warnings :   1
+
+Section 1 - Errors
+------------------
+ERROR:Pack:198 - NCD was not produced.  All logic was removed from the design. 
+   This is usually due to having no input or output PAD connections in the
+   design and no nets or symbols marked as 'SAVE'.  You can either add PADs or
+   'SAVE' attributes to the design, or run 'map -u' to disable logic trimming in
+   the mapper.  For more information on trimming issues search the Xilinx
+   Answers database for "ERROR:Pack:198" and read the Master Answer Record for
+   MAP Trimming Issues.
+
+Section 2 - Warnings
+--------------------
+WARNING:Security:43 - No license file was found in the standard Xilinx license
+directory.
+WARNING:Security:44 - Since no license file was found,
+WARNING:Security:42 - Your software subscription period has lapsed. Your current
+version of Xilinx tools will continue to function, but you no longer qualify for
+Xilinx software updates or new releases.
+WARNING:MapLib:701 - Signal clk connected to top level port clk has been
+   removed.
+
+Section 3 - Informational
+-------------------------
+INFO:Security:50 - The XILINXD_LICENSE_FILE environment variable is set to
+'2100@eels.ece.ust.hk'.
+INFO:Security:52 - The LM_LICENSE_FILE environment variable is set to
+'27031@eels.ece.ust.hk'.
+INFO:Security:56 - Part 'xc5vlx110t' is not a WebPack part.
+INFO:LIT:243 - Logical network out<7> has no load.
+INFO:LIT:395 - The above info message is repeated 15 more times for the
+   following (max. 5 shown):
+   out<6>,
+   out<5>,
+   out<4>,
+   out<3>,
+   out<2>
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+  38 block(s) removed
+  49 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+The signal "clk_BUFGP/IBUFG" is sourceless and has been removed.
+ Sourceless block "clk_BUFGP/BUFG" (CKBUF) removed.
+  The signal "clk_BUFGP" is sourceless and has been removed.
+   Sourceless block "addr_1" (FF) removed.
+    The signal "addr<1>" is sourceless and has been removed.
+     Sourceless block "Mcount_addr_xor<1>11" (ROM) removed.
+      The signal "Result<1>" is sourceless and has been removed.
+     Sourceless block "Mcount_addr_xor<2>11" (ROM) removed.
+      The signal "Result<2>" is sourceless and has been removed.
+       Sourceless block "addr_2" (FF) removed.
+        The signal "addr<2>" is sourceless and has been removed.
+         Sourceless block "Mcount_addr_xor<3>11" (ROM) removed.
+          The signal "Result<3>" is sourceless and has been removed.
+           Sourceless block "addr_3" (FF) removed.
+            The signal "addr<3>" is sourceless and has been removed.
+             Sourceless block "Mcount_addr_xor<4>11" (ROM) removed.
+              The signal "Result<4>" is sourceless and has been removed.
+               Sourceless block "addr_4" (FF) removed.
+                The signal "addr<4>" is sourceless and has been removed.
+                 Sourceless block "Mcount_addr_cy<4>11" (ROM) removed.
+                  The signal "Mcount_addr_cy<4>" is sourceless and has been removed.
+                   Sourceless block "Mcount_addr_xor<6>11" (ROM) removed.
+                    The signal "Result<6>" is sourceless and has been removed.
+                     Sourceless block "addr_6" (FF) removed.
+                      The signal "addr<6>" is sourceless and has been removed.
+                 Sourceless block "Mcount_addr_xor<5>11" (ROM) removed.
+                  The signal "Result<5>" is sourceless and has been removed.
+                   Sourceless block "addr_5" (FF) removed.
+                    The signal "addr<5>" is sourceless and has been removed.
+   Sourceless block "addr_0" (SFF) removed.
+    The signal "addr<0>" is sourceless and has been removed.
+   Sourceless block
+"im_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/sel_pipe_0" (FF) removed.
+    The signal
+"im_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/sel_pipe<0>" is sourceless and has been removed.
+     Sourceless block
+"im_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux11" (ROM) removed.
+      The signal "im_ram/douta<0>" is sourceless and has been removed.
+     Sourceless block
+"im_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux21" (ROM) removed.
+      The signal "im_ram/douta<1>" is sourceless and has been removed.
+     Sourceless block
+"im_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux31" (ROM) removed.
+      The signal "im_ram/douta<2>" is sourceless and has been removed.
+     Sourceless block
+"im_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux41" (ROM) removed.
+      The signal "im_ram/douta<3>" is sourceless and has been removed.
+     Sourceless block
+"im_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux51" (ROM) removed.
+      The signal "im_ram/douta<4>" is sourceless and has been removed.
+     Sourceless block
+"im_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux61" (ROM) removed.
+      The signal "im_ram/douta<5>" is sourceless and has been removed.
+     Sourceless block
+"im_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux71" (ROM) removed.
+      The signal "im_ram/douta<6>" is sourceless and has been removed.
+     Sourceless block
+"im_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/Mmux_dout_mux81" (ROM) removed.
+      The signal "im_ram/douta<7>" is sourceless and has been removed.
+   Sourceless block
+"im_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/sel_pipe_1" (FF) removed.
+    The signal
+"im_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/sel_pipe<1>" is sourceless and has been removed.
+   Sourceless block
+"im_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/sel_pipe_2" (FF) removed.
+    The signal
+"im_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mu
+x_a.A/sel_pipe<2>" is sourceless and has been removed.
+The signal "im_ram/N1" is sourceless and has been removed.
+The signal
+"im_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[0].ram.ram_douta<0>" is sourceless and has been removed.
+The signal
+"im_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[1].ram.ram_douta<0>" is sourceless and has been removed.
+The signal
+"im_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[0].ram.ram_douta<1>" is sourceless and has been removed.
+The signal
+"im_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[1].ram.ram_douta<1>" is sourceless and has been removed.
+The signal
+"im_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[2].ram.ram_douta<0>" is sourceless and has been removed.
+The signal
+"im_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[1].ram.ram_douta<2>" is sourceless and has been removed.
+The signal
+"im_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[2].ram.ram_douta<1>" is sourceless and has been removed.
+The signal
+"im_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[1].ram.ram_douta<3>" is sourceless and has been removed.
+The signal
+"im_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[3].ram.ram_douta<0>" is sourceless and has been removed.
+The signal
+"im_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[1].ram.ram_douta<4>" is sourceless and has been removed.
+The signal
+"im_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[3].ram.ram_douta<1>" is sourceless and has been removed.
+The signal
+"im_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[1].ram.ram_douta<5>" is sourceless and has been removed.
+The signal
+"im_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[4].ram.ram_douta<0>" is sourceless and has been removed.
+The signal
+"im_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[1].ram.ram_douta<6>" is sourceless and has been removed.
+The signal
+"im_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[4].ram.ram_douta<1>" is sourceless and has been removed.
+The signal
+"im_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[1].ram.ram_douta<7>" is sourceless and has been removed.
+The signal
+"im_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ena_ar
+ray<4>" is sourceless and has been removed.
+The signal
+"im_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[0].ram.ram_ena" is sourceless and has been removed.
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "N0" is unused and has been removed.
+ Unused block "XST_GND" (ZERO) removed.
+The signal "N1" is unused and has been removed.
+ Unused block "XST_VCC" (ONE) removed.
+The signal "clk" is unused and has been removed.
+ Unused block "clk" (PAD) removed.
+Unused block
+"im_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[0].ram.r/v5_init.ram/SP.SINGLE_PRIM18.SP" (RAMB18) removed.
+Unused block
+"im_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[1].ram.r/v5_init.ram/SP.SINGLE_PRIM18.SP" (RAMB18) removed.
+Unused block
+"im_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[2].ram.r/v5_init.ram/SP.SINGLE_PRIM18.SP" (RAMB18) removed.
+Unused block
+"im_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[3].ram.r/v5_init.ram/SP.SINGLE_PRIM18.SP" (RAMB18) removed.
+Unused block
+"im_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloo
+p[4].ram.r/v5_init.ram/SP.SINGLE_PRIM18.SP" (RAMB18) removed.
+Unused block "clk_BUFGP/IBUFG" (CKBUF) removed.
+Unused block
+"im_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/bindec
+_a.bindec_inst_a/Mmux_ENOUT<4>11" (ROM) removed.
+Unused block
+"im_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/out1"
+(ROM) removed.
+Unused block "im_ram/XST_GND" (ZERO) removed.

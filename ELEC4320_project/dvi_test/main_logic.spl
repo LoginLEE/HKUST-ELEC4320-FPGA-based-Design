@@ -1,0 +1,17 @@
+[Inputs]
+clk
+rst
+up
+down
+left
+right
+=pixel_x[9:0]=
+=pixel_y[9:0]=
+[Outputs]
+=pixel_r[7:0]=
+=pixel_g[7:0]=
+=pixel_b[7:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel main_logic
+

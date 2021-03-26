@@ -1,0 +1,132 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 2
+-n 3 -fastpaths -xml vgamult.twx vgamult.ncd -o vgamult.twr vgamult.pcf -ucf
+vgamult.ucf
+
+Design file:              vgamult.ncd
+Physical constraint file: vgamult.pcf
+Device,package,speed:     xc5vlx110t,ff1136,-2 (PRODUCTION 1.73 2013-10-13, STEPPING level 0)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk_100mhz
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+down        |    4.514(R)|   -2.872(R)|clk_OBUF          |   0.000|
+right       |    6.188(R)|   -3.634(R)|clk_OBUF          |   0.000|
+rst         |    8.586(R)|   -3.830(R)|clk_OBUF          |   0.000|
+up          |    4.751(R)|   -3.019(R)|clk_OBUF          |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock clk_100mhz to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+D<0>        |    6.211(R)|clk_OBUF          |   0.000|
+D<1>        |    6.152(R)|clk_OBUF          |   0.000|
+D<2>        |    6.137(R)|clk_OBUF          |   0.000|
+D<3>        |    6.117(R)|clk_OBUF          |   0.000|
+D<4>        |    6.297(R)|clk_OBUF          |   0.000|
+D<5>        |    6.310(R)|clk_OBUF          |   0.000|
+D<6>        |    5.953(R)|clk_OBUF          |   0.000|
+D<7>        |    6.065(R)|clk_OBUF          |   0.000|
+D<8>        |    6.128(R)|clk_OBUF          |   0.000|
+D<9>        |    6.302(R)|clk_OBUF          |   0.000|
+D<10>       |    6.196(R)|clk_OBUF          |   0.000|
+D<11>       |    6.503(R)|clk_OBUF          |   0.000|
+blank       |    5.810(R)|clk_OBUF          |   0.000|
+hsync       |    5.281(R)|clk_OBUF          |   0.000|
+pixel_b<0>  |    5.135(R)|clk_OBUF          |   0.000|
+pixel_b<1>  |    4.865(R)|clk_OBUF          |   0.000|
+pixel_b<2>  |    4.897(R)|clk_OBUF          |   0.000|
+pixel_b<3>  |    4.929(R)|clk_OBUF          |   0.000|
+pixel_b<4>  |    4.777(R)|clk_OBUF          |   0.000|
+pixel_b<5>  |    4.901(R)|clk_OBUF          |   0.000|
+pixel_b<6>  |    5.153(R)|clk_OBUF          |   0.000|
+pixel_b<7>  |    4.915(R)|clk_OBUF          |   0.000|
+pixel_g<0>  |    4.979(R)|clk_OBUF          |   0.000|
+pixel_g<1>  |    4.908(R)|clk_OBUF          |   0.000|
+pixel_g<2>  |    5.110(R)|clk_OBUF          |   0.000|
+pixel_g<3>  |    4.806(R)|clk_OBUF          |   0.000|
+pixel_g<4>  |    4.520(R)|clk_OBUF          |   0.000|
+pixel_g<5>  |    4.594(R)|clk_OBUF          |   0.000|
+pixel_g<6>  |    4.921(R)|clk_OBUF          |   0.000|
+pixel_g<7>  |    4.753(R)|clk_OBUF          |   0.000|
+pixel_r<0>  |    4.855(R)|clk_OBUF          |   0.000|
+pixel_r<1>  |    4.963(R)|clk_OBUF          |   0.000|
+pixel_r<2>  |    4.938(R)|clk_OBUF          |   0.000|
+pixel_r<3>  |    4.917(R)|clk_OBUF          |   0.000|
+pixel_r<4>  |    4.847(R)|clk_OBUF          |   0.000|
+pixel_r<5>  |    4.693(R)|clk_OBUF          |   0.000|
+pixel_r<6>  |    4.903(R)|clk_OBUF          |   0.000|
+pixel_r<7>  |    4.915(R)|clk_OBUF          |   0.000|
+vsync       |    6.262(R)|clk_OBUF          |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk_100mhz
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_100mhz     |   11.760|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+clk_100mhz     |D<0>           |    4.154|
+clk_100mhz     |D<1>           |    4.336|
+clk_100mhz     |D<2>           |    4.449|
+clk_100mhz     |D<3>           |    4.330|
+clk_100mhz     |D<4>           |    4.152|
+clk_100mhz     |D<5>           |    4.218|
+clk_100mhz     |D<6>           |    4.094|
+clk_100mhz     |D<7>           |    4.098|
+clk_100mhz     |D<8>           |    4.268|
+clk_100mhz     |D<9>           |    4.033|
+clk_100mhz     |D<10>          |    4.293|
+clk_100mhz     |D<11>          |    4.343|
+clk_100mhz     |clk            |    2.737|
+clk_100mhz     |clk_n          |    2.742|
+rst            |dvi_rst        |   10.257|
+---------------+---------------+---------+
+
+
+Analysis completed Thu Dec 19 16:05:33 2019 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 422 MB
+
+
+

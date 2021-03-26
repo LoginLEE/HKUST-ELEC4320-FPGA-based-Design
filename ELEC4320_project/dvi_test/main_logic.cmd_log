@@ -1,0 +1,12 @@
+vhdtdtfi -lib work C:/Users/cljchanac/Desktop/ELEC4320_project/dvi_test/main_logic.v -lang verilog -prj dvi_test -o main_logic.spl -module main_logic -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family virtex5 main_logic.spl C:/Users/cljchanac/Desktop/ELEC4320_project/dvi_test/main_logic.sym 
+vhdtdtfi -lib work C:/Users/cljchanac/Desktop/ELEC4320_project/dvi_test/main_logic.v -lang verilog -prj dvi_test -o main_logic.spl -module main_logic -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family virtex5 main_logic.spl C:/Users/cljchanac/Desktop/ELEC4320_project/dvi_test/main_logic.sym 
+vhdtdtfi -lib work C:/Users/cljchanac/Desktop/ELEC4320_project/dvi_test/main_logic.v -lang verilog -prj dvi_test -o main_logic.spl -module main_logic -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family virtex5 main_logic.spl C:/Users/cljchanac/Desktop/ELEC4320_project/dvi_test/main_logic.sym 
+vhdtdtfi -lib work C:/Users/cljchanac/Desktop/ELEC4320_project/dvi_test/main_logic.v -lang verilog -prj dvi_test -o main_logic.spl -module main_logic -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family virtex5 main_logic.spl C:/Users/cljchanac/Desktop/ELEC4320_project/dvi_test/main_logic.sym 
+vhdtdtfi -lib work C:/Users/cljchanac/Desktop/ELEC4320_project/dvi_test/main_logic.v -lang verilog -prj dvi_test -o main_logic.spl -module main_logic -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family virtex5 main_logic.spl C:/Users/cljchanac/Desktop/ELEC4320_project/dvi_test/main_logic.sym 
+vhdtdtfi -lib work C:/Users/cljchanac/Desktop/ELEC4320_project/dvi_test/main_logic.v -lang verilog -prj dvi_test -o main_logic.spl -module main_logic -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family virtex5 main_logic.spl C:/Users/cljchanac/Desktop/ELEC4320_project/dvi_test/main_logic.sym 

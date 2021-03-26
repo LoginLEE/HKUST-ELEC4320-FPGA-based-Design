@@ -1,0 +1,28 @@
+Command line:
+   matmult_top_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  51408
+
+Mon Nov 25 19:06:57 2019
+
+
+ Elaboration Time: 0.171601 sec
+
+ Current Memory Usage: 1345.29 Meg
+
+ Total Signals          : 4910
+ Total Nets             : 14731
+ Total Signal Drivers   : 1990
+ Total Blocks           : 564
+ Total Primitive Blocks : 464
+ Total Processes        : 2363
+ Total Traceable Variables  : 10524
+ Total Scalar Nets and Variables : 599256
+
+ Total Simulation Time: 0.187201 sec
+
+ Current Memory Usage: 716.132 Meg
+
+Mon Nov 25 19:21:14 2019
+

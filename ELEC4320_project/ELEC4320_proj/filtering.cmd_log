@@ -1,0 +1,14 @@
+xst -intstyle ise -ifn "C:/Users/cljchanac/Desktop/ELEC4320_project/ELEC4320_proj/filtering.xst" -ofn "C:/Users/cljchanac/Desktop/ELEC4320_project/ELEC4320_proj/filtering.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx110t-ff1136-1 filtering.ngc filtering.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o filtering_map.ncd filtering.ngd filtering.pcf 
+xst -intstyle ise -ifn "C:/Users/cljchanac/Desktop/ELEC4320_project/ELEC4320_proj/filtering.xst" -ofn "C:/Users/cljchanac/Desktop/ELEC4320_project/ELEC4320_proj/filtering.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx110t-ff1136-1 filtering.ngc filtering.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o filtering_map.ncd filtering.ngd filtering.pcf 
+par -w -intstyle ise -ol high -mt off filtering_map.ncd filtering.ncd filtering.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml filtering.twx filtering.ncd -o filtering.twr filtering.pcf 
+xst -intstyle ise -ifn "C:/Users/cljchanac/Desktop/ELEC4320_project/ELEC4320_proj/filtering.xst" -ofn "C:/Users/cljchanac/Desktop/ELEC4320_project/ELEC4320_proj/filtering.syr" 
+xst -intstyle ise -ifn "C:/Users/cljchanac/Desktop/ELEC4320_project/ELEC4320_proj/filtering.xst" -ofn "C:/Users/cljchanac/Desktop/ELEC4320_project/ELEC4320_proj/filtering.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx110t-ff1136-1 filtering.ngc filtering.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o filtering_map.ncd filtering.ngd filtering.pcf 
+par -w -intstyle ise -ol high -mt off filtering_map.ncd filtering.ncd filtering.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml filtering.twx filtering.ncd -o filtering.twr filtering.pcf 

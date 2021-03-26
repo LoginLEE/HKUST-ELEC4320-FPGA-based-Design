@@ -1,0 +1,8 @@
+verilog work "ipcore_dir/im_rgb_ram.v"
+verilog work "ipcore_dir/im_m_ram.v"
+verilog work "ipcore_dir/im_gray_ram.v"
+verilog work "vga_logic.v"
+verilog work "main_logic.v"
+verilog work "vga_clk.v"
+verilog work "dvi_ifc.v"
+verilog work "vgamult.v"

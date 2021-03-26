@@ -1,0 +1,7 @@
+verilog isim_temp "../src_4a/matmult_kernel.v"
+verilog isim_temp "ipcore_dir/Output_RAM.v"
+verilog isim_temp "ipcore_dir/Input_RAM_B.v"
+verilog isim_temp "ipcore_dir/Input_RAM_A.v"
+verilog isim_temp "../src_4a/matmult_top.v"
+verilog isim_temp "../src_4a/tb.v"
+verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

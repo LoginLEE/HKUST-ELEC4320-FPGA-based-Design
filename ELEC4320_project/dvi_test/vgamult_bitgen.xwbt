@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\cljchanac\Desktop\ELEC4320_project\dvi_test\vgamult.ncd
+OUTFILE=C:\Users\cljchanac\Desktop\ELEC4320_project\dvi_test\vgamult.bit
+FAMILY=Virtex5
+PART=xc5vlx110t-2ff1136
+WORKINGDIR=C:\Users\cljchanac\Desktop\ELEC4320_project\dvi_test
+LICENSE=ISE
+USER_INFO=210387038_174145948_210552256_966

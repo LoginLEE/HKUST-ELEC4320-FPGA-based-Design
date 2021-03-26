@@ -1,0 +1,37 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Dec 19 16:05:03 2019
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "up" LOCATE = SITE "U8" LEVEL 1;
+COMP "clk" LOCATE = SITE "AL10" LEVEL 1;
+COMP "rst" LOCATE = SITE "U25" LEVEL 1;
+COMP "D<0>" LOCATE = SITE "AB8" LEVEL 1;
+COMP "D<1>" LOCATE = SITE "AC8" LEVEL 1;
+COMP "D<2>" LOCATE = SITE "AN12" LEVEL 1;
+COMP "D<3>" LOCATE = SITE "AP12" LEVEL 1;
+COMP "D<4>" LOCATE = SITE "AA9" LEVEL 1;
+COMP "D<5>" LOCATE = SITE "AA8" LEVEL 1;
+COMP "D<6>" LOCATE = SITE "AM13" LEVEL 1;
+COMP "D<7>" LOCATE = SITE "AN13" LEVEL 1;
+COMP "D<8>" LOCATE = SITE "AA10" LEVEL 1;
+COMP "D<9>" LOCATE = SITE "AB10" LEVEL 1;
+COMP "clk_100mhz" LOCATE = SITE "AH15" LEVEL 1;
+COMP "left" LOCATE = SITE "AJ7" LEVEL 1;
+COMP "down" LOCATE = SITE "V8" LEVEL 1;
+COMP "D<10>" LOCATE = SITE "AP14" LEVEL 1;
+COMP "D<11>" LOCATE = SITE "AN14" LEVEL 1;
+COMP "blank" LOCATE = SITE "AE8" LEVEL 1;
+COMP "clk_n" LOCATE = SITE "AL11" LEVEL 1;
+COMP "hsync" LOCATE = SITE "AM12" LEVEL 1;
+COMP "right" LOCATE = SITE "AK7" LEVEL 1;
+COMP "dvi_rst" LOCATE = SITE "AK6" LEVEL 1;
+COMP "vsync" LOCATE = SITE "AM11" LEVEL 1;
+COMP "sda_tri" LOCATE = SITE "T29" LEVEL 1;
+COMP "scl_tri" LOCATE = SITE "U27" LEVEL 1;
+PIN sda_tri_OBUFT_pins<1> = BEL "sda_tri_OBUFT" PINNAME OUT;
+PIN scl_tri_OBUFT_pins<1> = BEL "scl_tri_OBUFT" PINNAME OUT;
+PIN "sda_tri_OBUFT_pins<1>" TIG;
+PIN "scl_tri_OBUFT_pins<1>" TIG;
+SCHEMATIC END;
+

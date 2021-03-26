@@ -1,0 +1,606 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: matmult_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "matmult_top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "matmult_top"
+Output Format                      : NGC
+Target Device                      : xc5vlx110t-1-ff1136
+
+---- Source Options
+Top Module Name                    : matmult_top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "../src_4a/matmult_kernel.v" in library work
+Compiling verilog include file "../src_4a/define.v"
+Compiling verilog file "ipcore_dir/Output_RAM.v" in library work
+Module <matmult_kernel> compiled
+Compiling verilog file "ipcore_dir/Input_RAM_B.v" in library work
+Module <Output_RAM> compiled
+Compiling verilog file "ipcore_dir/Input_RAM_A.v" in library work
+Module <Input_RAM_B> compiled
+Compiling verilog file "../src_4a/matmult_top.v" in library work
+Compiling verilog include file "../src_4a/define.v"
+Module <Input_RAM_A> compiled
+Module <matmult_top> compiled
+No errors in compilation
+Analysis of file <"matmult_top.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <matmult_top> in library <work>.
+
+Analyzing hierarchy for module <matmult_kernel> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <matmult_top>.
+WARNING:Xst:2211 - "ipcore_dir/Output_RAM.v" line 46: Instantiating black box module <Output_RAM>.
+WARNING:Xst:2211 - "ipcore_dir/Input_RAM_A.v" line 24: Instantiating black box module <Input_RAM_A>.
+WARNING:Xst:2211 - "ipcore_dir/Input_RAM_A.v" line 24: Instantiating black box module <Input_RAM_A>.
+WARNING:Xst:2211 - "ipcore_dir/Input_RAM_A.v" line 24: Instantiating black box module <Input_RAM_A>.
+WARNING:Xst:2211 - "ipcore_dir/Input_RAM_A.v" line 24: Instantiating black box module <Input_RAM_A>.
+WARNING:Xst:2211 - "ipcore_dir/Input_RAM_A.v" line 24: Instantiating black box module <Input_RAM_A>.
+WARNING:Xst:2211 - "ipcore_dir/Input_RAM_A.v" line 24: Instantiating black box module <Input_RAM_A>.
+WARNING:Xst:2211 - "ipcore_dir/Input_RAM_A.v" line 24: Instantiating black box module <Input_RAM_A>.
+WARNING:Xst:2211 - "ipcore_dir/Input_RAM_A.v" line 24: Instantiating black box module <Input_RAM_A>.
+WARNING:Xst:2211 - "ipcore_dir/Input_RAM_A.v" line 24: Instantiating black box module <Input_RAM_A>.
+WARNING:Xst:2211 - "ipcore_dir/Input_RAM_A.v" line 24: Instantiating black box module <Input_RAM_A>.
+WARNING:Xst:2211 - "ipcore_dir/Input_RAM_A.v" line 24: Instantiating black box module <Input_RAM_A>.
+WARNING:Xst:2211 - "ipcore_dir/Input_RAM_A.v" line 24: Instantiating black box module <Input_RAM_A>.
+WARNING:Xst:2211 - "ipcore_dir/Input_RAM_A.v" line 24: Instantiating black box module <Input_RAM_A>.
+WARNING:Xst:2211 - "ipcore_dir/Input_RAM_A.v" line 24: Instantiating black box module <Input_RAM_A>.
+WARNING:Xst:2211 - "ipcore_dir/Input_RAM_A.v" line 24: Instantiating black box module <Input_RAM_A>.
+WARNING:Xst:2211 - "ipcore_dir/Input_RAM_A.v" line 24: Instantiating black box module <Input_RAM_A>.
+WARNING:Xst:2211 - "ipcore_dir/Input_RAM_B.v" line 35: Instantiating black box module <Input_RAM_B>.
+WARNING:Xst:2211 - "ipcore_dir/Input_RAM_B.v" line 35: Instantiating black box module <Input_RAM_B>.
+WARNING:Xst:2211 - "ipcore_dir/Input_RAM_B.v" line 35: Instantiating black box module <Input_RAM_B>.
+WARNING:Xst:2211 - "ipcore_dir/Input_RAM_B.v" line 35: Instantiating black box module <Input_RAM_B>.
+WARNING:Xst:2211 - "ipcore_dir/Input_RAM_B.v" line 35: Instantiating black box module <Input_RAM_B>.
+WARNING:Xst:2211 - "ipcore_dir/Input_RAM_B.v" line 35: Instantiating black box module <Input_RAM_B>.
+WARNING:Xst:2211 - "ipcore_dir/Input_RAM_B.v" line 35: Instantiating black box module <Input_RAM_B>.
+WARNING:Xst:2211 - "ipcore_dir/Input_RAM_B.v" line 35: Instantiating black box module <Input_RAM_B>.
+WARNING:Xst:2211 - "ipcore_dir/Input_RAM_B.v" line 35: Instantiating black box module <Input_RAM_B>.
+WARNING:Xst:2211 - "ipcore_dir/Input_RAM_B.v" line 35: Instantiating black box module <Input_RAM_B>.
+WARNING:Xst:2211 - "ipcore_dir/Input_RAM_B.v" line 35: Instantiating black box module <Input_RAM_B>.
+WARNING:Xst:2211 - "ipcore_dir/Input_RAM_B.v" line 35: Instantiating black box module <Input_RAM_B>.
+WARNING:Xst:2211 - "ipcore_dir/Input_RAM_B.v" line 35: Instantiating black box module <Input_RAM_B>.
+WARNING:Xst:2211 - "ipcore_dir/Input_RAM_B.v" line 35: Instantiating black box module <Input_RAM_B>.
+WARNING:Xst:2211 - "ipcore_dir/Input_RAM_B.v" line 35: Instantiating black box module <Input_RAM_B>.
+WARNING:Xst:2211 - "ipcore_dir/Input_RAM_B.v" line 35: Instantiating black box module <Input_RAM_B>.
+Module <matmult_top> is correct for synthesis.
+ 
+Analyzing module <matmult_kernel> in library <work>.
+Module <matmult_kernel> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <matmult_kernel>.
+    Related source file is "../src_4a/matmult_kernel.v".
+    Register <Rd_B_addr> equivalent to <Rd_A_addr> has been removed
+    Found 1-bit register for signal <Rd_en>.
+    Found 4-bit register for signal <Rd_A_addr>.
+    Found 1-bit register for signal <Wr_en>.
+    Found 8-bit register for signal <Wr_addr>.
+    Found 9-bit up counter for signal <cycle_cnt>.
+    Found 9-bit comparator less for signal <cycle_cnt$cmp_lt0000> created at line 30.
+    Found 9-bit comparator less for signal <Rd_en$cmp_lt0000> created at line 41.
+    Found 512-bit register for signal <reg_state_1>.
+    Found 16x16-bit multiplier for signal <reg_state_1_0$mult0000> created at line 83.
+    Found 16x16-bit multiplier for signal <reg_state_1_1$mult0000> created at line 84.
+    Found 16x16-bit multiplier for signal <reg_state_1_10$mult0000> created at line 93.
+    Found 16x16-bit multiplier for signal <reg_state_1_11$mult0000> created at line 94.
+    Found 16x16-bit multiplier for signal <reg_state_1_12$mult0000> created at line 95.
+    Found 16x16-bit multiplier for signal <reg_state_1_13$mult0000> created at line 96.
+    Found 16x16-bit multiplier for signal <reg_state_1_14$mult0000> created at line 97.
+    Found 16x16-bit multiplier for signal <reg_state_1_15$mult0000> created at line 98.
+    Found 16x16-bit multiplier for signal <reg_state_1_2$mult0000> created at line 85.
+    Found 16x16-bit multiplier for signal <reg_state_1_3$mult0000> created at line 86.
+    Found 16x16-bit multiplier for signal <reg_state_1_4$mult0000> created at line 87.
+    Found 16x16-bit multiplier for signal <reg_state_1_5$mult0000> created at line 88.
+    Found 16x16-bit multiplier for signal <reg_state_1_6$mult0000> created at line 89.
+    Found 16x16-bit multiplier for signal <reg_state_1_7$mult0000> created at line 90.
+    Found 16x16-bit multiplier for signal <reg_state_1_8$mult0000> created at line 91.
+    Found 16x16-bit multiplier for signal <reg_state_1_9$mult0000> created at line 92.
+    Found 256-bit register for signal <reg_state_2>.
+    Found 32-bit adder for signal <reg_state_2_0$add0000> created at line 112.
+    Found 32-bit adder for signal <reg_state_2_1$add0000> created at line 113.
+    Found 32-bit adder for signal <reg_state_2_2$add0000> created at line 114.
+    Found 32-bit adder for signal <reg_state_2_3$add0000> created at line 115.
+    Found 32-bit adder for signal <reg_state_2_4$add0000> created at line 116.
+    Found 32-bit adder for signal <reg_state_2_5$add0000> created at line 117.
+    Found 32-bit adder for signal <reg_state_2_6$add0000> created at line 118.
+    Found 32-bit adder for signal <reg_state_2_7$add0000> created at line 119.
+    Found 128-bit register for signal <reg_state_3>.
+    Found 32-bit adder for signal <reg_state_3_0$add0000> created at line 134.
+    Found 32-bit adder for signal <reg_state_3_1$add0000> created at line 135.
+    Found 32-bit adder for signal <reg_state_3_2$add0000> created at line 136.
+    Found 32-bit adder for signal <reg_state_3_3$add0000> created at line 137.
+    Found 64-bit register for signal <reg_state_4>.
+    Found 32-bit adder for signal <reg_state_4_0$add0000> created at line 144.
+    Found 32-bit adder for signal <reg_state_4_1$add0000> created at line 145.
+    Found 32-bit register for signal <reg_state_5>.
+    Found 32-bit adder for signal <reg_state_5$add0000> created at line 152.
+    Found 8-bit subtractor for signal <Wr_addr$sub0000> created at line 58.
+    Found 9-bit comparator greatequal for signal <Wr_en$cmp_ge0000> created at line 55.
+INFO:Xst:738 - HDL ADVISOR - 512 flip-flops were inferred for signal <reg_state_1>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+INFO:Xst:738 - HDL ADVISOR - 256 flip-flops were inferred for signal <reg_state_2>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+    Summary:
+	inferred   1 Counter(s).
+	inferred 1006 D-type flip-flop(s).
+	inferred  16 Adder/Subtractor(s).
+	inferred  16 Multiplier(s).
+	inferred   3 Comparator(s).
+Unit <matmult_kernel> synthesized.
+
+
+Synthesizing Unit <matmult_top>.
+    Related source file is "../src_4a/matmult_top.v".
+Unit <matmult_top> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 16
+ 16x16-bit multiplier                                  : 16
+# Adders/Subtractors                                   : 16
+ 32-bit adder                                          : 15
+ 8-bit subtractor                                      : 1
+# Counters                                             : 1
+ 9-bit up counter                                      : 1
+# Registers                                            : 35
+ 1-bit register                                        : 2
+ 32-bit register                                       : 31
+ 4-bit register                                        : 1
+ 8-bit register                                        : 1
+# Comparators                                          : 3
+ 9-bit comparator greatequal                           : 1
+ 9-bit comparator less                                 : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/Output_RAM.ngc>.
+Reading core <ipcore_dir/Input_RAM_A.ngc>.
+Reading core <ipcore_dir/Input_RAM_B.ngc>.
+Loading core <Output_RAM> for timing and area information for instance <C_ram>.
+Loading core <Input_RAM_A> for timing and area information for instance <A_ram[0].A_column>.
+Loading core <Input_RAM_A> for timing and area information for instance <A_ram[1].A_column>.
+Loading core <Input_RAM_A> for timing and area information for instance <A_ram[2].A_column>.
+Loading core <Input_RAM_A> for timing and area information for instance <A_ram[3].A_column>.
+Loading core <Input_RAM_A> for timing and area information for instance <A_ram[4].A_column>.
+Loading core <Input_RAM_A> for timing and area information for instance <A_ram[5].A_column>.
+Loading core <Input_RAM_A> for timing and area information for instance <A_ram[6].A_column>.
+Loading core <Input_RAM_A> for timing and area information for instance <A_ram[7].A_column>.
+Loading core <Input_RAM_A> for timing and area information for instance <A_ram[8].A_column>.
+Loading core <Input_RAM_A> for timing and area information for instance <A_ram[9].A_column>.
+Loading core <Input_RAM_A> for timing and area information for instance <A_ram[10].A_column>.
+Loading core <Input_RAM_A> for timing and area information for instance <A_ram[11].A_column>.
+Loading core <Input_RAM_A> for timing and area information for instance <A_ram[12].A_column>.
+Loading core <Input_RAM_A> for timing and area information for instance <A_ram[13].A_column>.
+Loading core <Input_RAM_A> for timing and area information for instance <A_ram[14].A_column>.
+Loading core <Input_RAM_A> for timing and area information for instance <A_ram[15].A_column>.
+Loading core <Input_RAM_B> for timing and area information for instance <B_ram[0].B_row>.
+Loading core <Input_RAM_B> for timing and area information for instance <B_ram[1].B_row>.
+Loading core <Input_RAM_B> for timing and area information for instance <B_ram[2].B_row>.
+Loading core <Input_RAM_B> for timing and area information for instance <B_ram[3].B_row>.
+Loading core <Input_RAM_B> for timing and area information for instance <B_ram[4].B_row>.
+Loading core <Input_RAM_B> for timing and area information for instance <B_ram[5].B_row>.
+Loading core <Input_RAM_B> for timing and area information for instance <B_ram[6].B_row>.
+Loading core <Input_RAM_B> for timing and area information for instance <B_ram[7].B_row>.
+Loading core <Input_RAM_B> for timing and area information for instance <B_ram[8].B_row>.
+Loading core <Input_RAM_B> for timing and area information for instance <B_ram[9].B_row>.
+Loading core <Input_RAM_B> for timing and area information for instance <B_ram[10].B_row>.
+Loading core <Input_RAM_B> for timing and area information for instance <B_ram[11].B_row>.
+Loading core <Input_RAM_B> for timing and area information for instance <B_ram[12].B_row>.
+Loading core <Input_RAM_B> for timing and area information for instance <B_ram[13].B_row>.
+Loading core <Input_RAM_B> for timing and area information for instance <B_ram[14].B_row>.
+Loading core <Input_RAM_B> for timing and area information for instance <B_ram[15].B_row>.
+
+Synthesizing (advanced) Unit <matmult_kernel>.
+	Multiplier <Mmult_reg_state_1_0_mult0000> in block <matmult_kernel> and adder/subtractor <Madd_reg_state_2_0_add0000> in block <matmult_kernel> are combined into a MAC<Maddsub_reg_state_1_0_mult0000>.
+	The following registers are also absorbed by the MAC: <reg_state_1_0> in block <matmult_kernel>, <reg_state_2_0> in block <matmult_kernel>.
+	Multiplier <Mmult_reg_state_1_4_mult0000> in block <matmult_kernel> and adder/subtractor <Madd_reg_state_2_2_add0000> in block <matmult_kernel> are combined into a MAC<Maddsub_reg_state_1_4_mult0000>.
+	The following registers are also absorbed by the MAC: <reg_state_1_4> in block <matmult_kernel>, <reg_state_2_2> in block <matmult_kernel>.
+	Multiplier <Mmult_reg_state_1_2_mult0000> in block <matmult_kernel> and adder/subtractor <Madd_reg_state_2_1_add0000> in block <matmult_kernel> are combined into a MAC<Maddsub_reg_state_1_2_mult0000>.
+	The following registers are also absorbed by the MAC: <reg_state_1_2> in block <matmult_kernel>, <reg_state_2_1> in block <matmult_kernel>.
+	Multiplier <Mmult_reg_state_1_6_mult0000> in block <matmult_kernel> and adder/subtractor <Madd_reg_state_2_3_add0000> in block <matmult_kernel> are combined into a MAC<Maddsub_reg_state_1_6_mult0000>.
+	The following registers are also absorbed by the MAC: <reg_state_1_6> in block <matmult_kernel>, <reg_state_2_3> in block <matmult_kernel>.
+	Multiplier <Mmult_reg_state_1_8_mult0000> in block <matmult_kernel> and adder/subtractor <Madd_reg_state_2_4_add0000> in block <matmult_kernel> are combined into a MAC<Maddsub_reg_state_1_8_mult0000>.
+	The following registers are also absorbed by the MAC: <reg_state_1_8> in block <matmult_kernel>, <reg_state_2_4> in block <matmult_kernel>.
+	Multiplier <Mmult_reg_state_1_10_mult0000> in block <matmult_kernel> and adder/subtractor <Madd_reg_state_2_5_add0000> in block <matmult_kernel> are combined into a MAC<Maddsub_reg_state_1_10_mult0000>.
+	The following registers are also absorbed by the MAC: <reg_state_1_10> in block <matmult_kernel>, <reg_state_2_5> in block <matmult_kernel>.
+	Multiplier <Mmult_reg_state_1_12_mult0000> in block <matmult_kernel> and adder/subtractor <Madd_reg_state_2_6_add0000> in block <matmult_kernel> are combined into a MAC<Maddsub_reg_state_1_12_mult0000>.
+	The following registers are also absorbed by the MAC: <reg_state_1_12> in block <matmult_kernel>, <reg_state_2_6> in block <matmult_kernel>.
+	Multiplier <Mmult_reg_state_1_14_mult0000> in block <matmult_kernel> and adder/subtractor <Madd_reg_state_2_7_add0000> in block <matmult_kernel> are combined into a MAC<Maddsub_reg_state_1_14_mult0000>.
+	The following registers are also absorbed by the MAC: <reg_state_1_14> in block <matmult_kernel>, <reg_state_2_7> in block <matmult_kernel>.
+	Found pipelined multiplier on signal <reg_state_1_3_mult0000>:
+		- 1 pipeline level(s) found in a register connected to the multiplier macro output.
+		Pushing register(s) into the multiplier macro.
+	Found pipelined multiplier on signal <reg_state_1_1_mult0000>:
+		- 1 pipeline level(s) found in a register connected to the multiplier macro output.
+		Pushing register(s) into the multiplier macro.
+	Found pipelined multiplier on signal <reg_state_1_5_mult0000>:
+		- 1 pipeline level(s) found in a register connected to the multiplier macro output.
+		Pushing register(s) into the multiplier macro.
+	Found pipelined multiplier on signal <reg_state_1_9_mult0000>:
+		- 1 pipeline level(s) found in a register connected to the multiplier macro output.
+		Pushing register(s) into the multiplier macro.
+	Found pipelined multiplier on signal <reg_state_1_7_mult0000>:
+		- 1 pipeline level(s) found in a register connected to the multiplier macro output.
+		Pushing register(s) into the multiplier macro.
+	Found pipelined multiplier on signal <reg_state_1_11_mult0000>:
+		- 1 pipeline level(s) found in a register connected to the multiplier macro output.
+		Pushing register(s) into the multiplier macro.
+	Found pipelined multiplier on signal <reg_state_1_15_mult0000>:
+		- 1 pipeline level(s) found in a register connected to the multiplier macro output.
+		Pushing register(s) into the multiplier macro.
+	Found pipelined multiplier on signal <reg_state_1_13_mult0000>:
+		- 1 pipeline level(s) found in a register connected to the multiplier macro output.
+		Pushing register(s) into the multiplier macro.
+INFO:Xst:2385 - HDL ADVISOR - You can improve the performance of the multiplier Mmult_reg_state_1_3_mult0000 by adding 1 register level(s).
+INFO:Xst:2385 - HDL ADVISOR - You can improve the performance of the multiplier Mmult_reg_state_1_1_mult0000 by adding 1 register level(s).
+INFO:Xst:2385 - HDL ADVISOR - You can improve the performance of the multiplier Mmult_reg_state_1_5_mult0000 by adding 1 register level(s).
+INFO:Xst:2385 - HDL ADVISOR - You can improve the performance of the multiplier Mmult_reg_state_1_9_mult0000 by adding 1 register level(s).
+INFO:Xst:2385 - HDL ADVISOR - You can improve the performance of the multiplier Mmult_reg_state_1_7_mult0000 by adding 1 register level(s).
+INFO:Xst:2385 - HDL ADVISOR - You can improve the performance of the multiplier Mmult_reg_state_1_11_mult0000 by adding 1 register level(s).
+INFO:Xst:2385 - HDL ADVISOR - You can improve the performance of the multiplier Mmult_reg_state_1_15_mult0000 by adding 1 register level(s).
+INFO:Xst:2385 - HDL ADVISOR - You can improve the performance of the multiplier Mmult_reg_state_1_13_mult0000 by adding 1 register level(s).
+Unit <matmult_kernel> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# MACs                                                 : 8
+ 16x16-to-32-bit MAC                                   : 8
+# Multipliers                                          : 8
+ 16x16-bit registered multiplier                       : 8
+# Adders/Subtractors                                   : 8
+ 32-bit adder                                          : 7
+ 8-bit subtractor                                      : 1
+# Counters                                             : 1
+ 9-bit up counter                                      : 1
+# Registers                                            : 238
+ Flip-Flops                                            : 238
+# Comparators                                          : 3
+ 9-bit comparator greatequal                           : 1
+ 9-bit comparator less                                 : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <matmult_top> ...
+
+Optimizing unit <matmult_kernel> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block matmult_top, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 119
+ Flip-Flops                                            : 119
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : matmult_top.ngr
+Top Level Output File Name         : matmult_top
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 42
+
+Cell Usage :
+# BELS                             : 400
+#      GND                         : 34
+#      INV                         : 2
+#      LUT1                        : 8
+#      LUT2                        : 97
+#      LUT3                        : 9
+#      LUT4                        : 4
+#      LUT5                        : 4
+#      LUT6                        : 2
+#      MUXCY                       : 101
+#      VCC                         : 34
+#      XORCY                       : 105
+# FlipFlops/Latches                : 119
+#      FD                          : 96
+#      FDR                         : 14
+#      FDRE                        : 9
+# RAMS                             : 33
+#      RAMB18                      : 33
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 41
+#      IBUF                        : 9
+#      OBUF                        : 32
+# DSPs                             : 20
+#      DSP48E                      : 20
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 5vlx110tff1136-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             119  out of  69120     0%  
+ Number of Slice LUTs:                  126  out of  69120     0%  
+    Number used as Logic:               126  out of  69120     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    245
+   Number with an unused Flip Flop:     126  out of    245    51%  
+   Number with an unused LUT:           119  out of    245    48%  
+   Number of fully used LUT-FF pairs:     0  out of    245     0%  
+   Number of unique control sets:         4
+
+IO Utilization: 
+ Number of IOs:                          42
+ Number of bonded IOBs:                  42  out of    640     6%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:               17  out of    148    11%  
+    Number using Block RAM only:         17
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+ Number of DSP48Es:                      20  out of     64    31%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+Clk                                | BUFGP                  | 172   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 5.810ns (Maximum Frequency: 172.117MHz)
+   Minimum input arrival time before clock: 2.919ns
+   Maximum output required time after clock: 4.968ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clk'
+  Clock period: 5.810ns (frequency: 172.117MHz)
+  Total number of paths / destination ports: 6744 / 1913
+-------------------------------------------------------------------------
+Delay:               5.810ns (Levels of Logic = 1)
+  Source:            A_ram[15].A_column/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v5_init.ram/SP.WIDE_PRIM18.SP (RAM)
+  Destination:       mmkernel/Mmult_reg_state_1_15_mult0000 (DSP)
+  Source Clock:      Clk rising
+  Destination Clock: Clk rising
+
+  Data Path: A_ram[15].A_column/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v5_init.ram/SP.WIDE_PRIM18.SP to mmkernel/Mmult_reg_state_1_15_mult0000
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB18:CLKB->DOB11   10   2.180   0.385  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v5_init.ram/SP.WIDE_PRIM18.SP (douta<15>)
+     end scope: 'A_ram[15].A_column'
+     DSP48E:A15                3.245          mmkernel/Mmult_reg_state_1_15_mult0000
+    ----------------------------------------
+    Total                      5.810ns (5.425ns logic, 0.385ns route)
+                                       (93.4% logic, 6.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk'
+  Total number of paths / destination ports: 25 / 25
+-------------------------------------------------------------------------
+Offset:              2.919ns (Levels of Logic = 3)
+  Source:            Start (PAD)
+  Destination:       mmkernel/cycle_cnt_8 (FF)
+  Destination Clock: Clk rising
+
+  Data Path: Start to mmkernel/cycle_cnt_8
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.818   0.480  Start_IBUF (Start_IBUF)
+     LUT5:I4->O            1   0.094   0.480  mmkernel/cycle_cnt_and0000_SW0 (N01)
+     LUT6:I5->O            9   0.094   0.380  mmkernel/cycle_cnt_and0000 (mmkernel/cycle_cnt_and0000)
+     FDRE:R                    0.573          mmkernel/cycle_cnt_0
+    ----------------------------------------
+    Total                      2.919ns (1.579ns logic, 1.340ns route)
+                                       (54.1% logic, 45.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              4.968ns (Levels of Logic = 2)
+  Source:            C_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/SP.WIDE_PRIM18.SP (RAM)
+  Destination:       Result<31> (PAD)
+  Source Clock:      Clk rising
+
+  Data Path: C_ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/SP.WIDE_PRIM18.SP to Result<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB18:CLKB->DOB15    1   2.180   0.336  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/SP.WIDE_PRIM18.SP (douta<31>)
+     end scope: 'C_ram'
+     OBUF:I->O                 2.452          Result_31_OBUF (Result<31>)
+    ----------------------------------------
+    Total                      4.968ns (4.632ns logic, 0.336ns route)
+                                       (93.2% logic, 6.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 22.00 secs
+Total CPU time to Xst completion: 21.77 secs
+ 
+--> 
+
+Total memory usage is 372224 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   33 (   0 filtered)
+Number of infos    :   10 (   0 filtered)
+

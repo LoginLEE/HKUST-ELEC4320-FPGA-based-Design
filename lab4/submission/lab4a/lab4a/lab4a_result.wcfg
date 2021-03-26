@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/cljchanac/Desktop/lab4a/lab4a/tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="12" />
+   <wvobject fp_name="/tb/Result" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Result[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/Clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Clk</obj_property>
+      <obj_property name="ObjectShortName">Clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/Start" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Start</obj_property>
+      <obj_property name="ObjectShortName">Start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/Result_rden" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Result_rden</obj_property>
+      <obj_property name="ObjectShortName">Result_rden</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/Result_addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Result_addr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Result_addr[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/mmtop/\A_ram[0].A_column /douta" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">douta[15:0]</obj_property>
+      <obj_property name="ObjectShortName">douta[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/mmtop/\A_ram[0].A_column /addra" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addra[3:0]</obj_property>
+      <obj_property name="ObjectShortName">addra[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/mmtop/mmkernel/Rd_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Rd_en</obj_property>
+      <obj_property name="ObjectShortName">Rd_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/mmtop/mmkernel/Wr_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Wr_en</obj_property>
+      <obj_property name="ObjectShortName">Wr_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/mmtop/mmkernel/C" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">C[31:0]</obj_property>
+      <obj_property name="ObjectShortName">C[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/mmtop/C_ram/dina" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dina[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dina[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/mmtop/C_ram/addra" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addra[7:0]</obj_property>
+      <obj_property name="ObjectShortName">addra[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+</wave_config>
