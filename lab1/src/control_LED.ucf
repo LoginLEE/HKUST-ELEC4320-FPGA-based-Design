@@ -1,0 +1,21 @@
+NET "input_value[0]" LOC = U25;
+NET "input_value[1]" LOC = AG27;
+NET "input_value[2]" LOC = AF25;
+NET "input_value[3]" LOC = AF26;
+NET "input_value[4]" LOC = AE27;
+NET "input_value[5]" LOC = AE26;
+NET "input_value[6]" LOC = AC25;
+NET "input_value[7]" LOC = AC24;
+
+NET "show_value[0]" LOC = H18;
+NET "show_value[1]" LOC = L18;
+NET "show_value[2]" LOC = G15;
+NET "show_value[3]" LOC = AD26;
+NET "show_value[4]" LOC = G16;
+NET "show_value[5]" LOC = AD25;
+NET "show_value[6]" LOC = AD24;
+NET "show_value[7]" LOC = AE24;
+
+# PlanAhead Generated IO constraints 
+
+NET "input_value[7]" IOSTANDARD = LVCMOS25;
